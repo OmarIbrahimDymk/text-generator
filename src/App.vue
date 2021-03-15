@@ -43,7 +43,7 @@ export default {
     const placeholders = ref([]);
 
     const getPlaceholders = () => {
-      placeholders.value = sentence.value.match(/{([a-zA-Z0-9]*)}/gm);
+      placeholders.value = sentence.value.match(/{{([a-zA-Z0-9]*)}}/gm);
     };
 
     const replaceSentence = () => {
